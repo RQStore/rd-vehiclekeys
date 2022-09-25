@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.bar-container {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 4.3vh;
+    width: 27.5vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 12vh;
+    /* border-radius: .5vh; */
+    box-shadow: inset 0 0 2vh 0 rgba(0, 0, 0, 0.6);
+    border: .3vh solid rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+}
+
+.bar-check {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background-color: rgba(65, 65, 65, 0.651);
+    bottom: 0;
+    right: 50%;
+    z-index: 101;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    text-align: center;
+    transition: background-color .1s ease;
+    z-index: 101;
+}
+
+.bar-check > span {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.3vh;
+    font-weight: bold;
+    line-height: 4.3vh;
+    text-shadow: 1px 1px 1px #00000033;
+}
+
+.bar-total {
+    height: 100%;
+    width: 0%;
+    background: rgb(125,29,29);
+    background: linear-gradient(-90deg, rgba(125,29,29,0.75) 0%, rgba(228,66,66,0.75) 100%);
+    z-index: 100;
+}
+
+.bar-label {
+    position: absolute;
+    height: auto;
+    width: auto;
+    text-align: center;
+    z-index: 101;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 8vh;
+}
+
+.bar-label > span {
+    line-height: 4.3vh;
+    color: rgb(218, 218, 218);
+    font-size: 1.1vh;
+    text-shadow: 1px 1px 1px #00000075;
+}
+
+
+body {
+    background: #2ecc7000;
+  }
+  .lock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+  }
+  .lock .instruction {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: -100px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    width: 400px;
+    margin-left: -100px;
+  }
+  .lock .ring {
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  .lock .ring.checked {
+    animation: blink 2s ease-in-out;
+  }
+  @keyframes blink {
+    0%,
+    50%,
+    100% {
+      border: 5px solid rgba(255, 255, 255, 1);
+    }
+    25%,
+    75% {
+      border: 5px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+  .lock .lockpick {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background: black;
+    left: 50%;
+    top: 0px;
+    margin-left: -2px;
+    background: white;
+    transform-origin: bottom;
+  }
+  .lock .stage {
+    position: absolute;
+    bottom: 40px;
+    left: 110%;
+    transform: translateX(-50%);
+  }
+  .lock .stage li {
+    width: 10px;
+    height: 25px;
+    background: rgba(235, 6, 0, 92);
+    float: left;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: all 1s ease;
+  }
+  .lock .stage li.active,
+  .color-shake.color-freeze,
+  .lock .stage li.done {
+    background: white;
+    margin-top: -10px;
+    animation-name: color-shake;
+    animation-duration: 100ms;
+  }
+  .lock .stage li.done {
+    margin-top: -20px;
+    background: rgba(40, 235, 0, 92);
+
+  }
+  .lock > .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .lock .lockpick .fas {
+    position: absolute;
+    color: white;
+    display: none;
+  }
+  .lock .lockpick .fas.fa-caret-right {
+    top: 3px;
+    right: -8px;
+  }
+  .lock .lockpick .fas.fa-caret-left {
+    top: 3px;
+    left: -8px;
+  }
+  @keyframes shake-little {
+    2% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    4% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    6% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    8% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    10% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    12% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    14% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    16% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    18% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    20% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    22% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    24% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    26% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    28% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    30% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    32% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    34% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    36% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    38% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    40% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    42% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    44% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    46% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    48% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    50% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    52% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    54% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    56% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    58% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    60% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    62% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    64% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    66% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    68% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    70% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    72% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    74% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    76% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    78% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    80% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    82% {
+      transform: translate(1px, 0px) rotate(0.5deg);
+    }
+    84% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    86% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    88% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    90% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    92% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    94% {
+      transform: translate(1px, 1px) rotate(0.5deg);
+    }
+    96% {
+      transform: translate(0px, 1px) rotate(0.5deg);
+    }
+    98% {
+      transform: translate(0px, 0px) rotate(0.5deg);
+    }
+    0%,
+    100% {
+      transform: translate(0, 0) rotate(0);
+    }
+  }
+  .shake-little:hover,
+  .shake-trigger:hover .shake-little,
+  .shake-little.shake-freeze,
+  .shake-little.shake-constant {
+    animation-name: shake-little;
+    animation-duration: 100ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes color-shake {
+    10% {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    20% {
+      background: rgba(30, 255, 0, 0.5);
+    }
+    30% {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    40% {
+      background: rgba(30, 255, 0, 0.5);
+    }
+    50% {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    60% {
+      background: rgba(30, 255, 0, 0.5);
+    }
+    70% {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    80% {
+      background: rgba(30, 255, 0, 0.5);
+    }
+    90% {
+      background: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      background: rgba(30, 255, 0, 0.5);
+    }
+  }
+
+  
