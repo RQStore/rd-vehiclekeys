@@ -14,8 +14,8 @@ FiveM Vehicle Lock is a script to steal cars and lock cars,
 - Can Lock Your Oun Cars
 
 ## Copirights
-All copyrights belong to REStore and iDrfx Store It is strictly forbidden to change the name of the script, it will crash automatically
+ - All copyrights belong to REStore and iDrfx Store It is strictly forbidden to change the name of the script, it will crash automatically
 
-Script Made By : 76B_qht#4576 AND DrFx#3097
-RQStore : https://discord.gg/RBQepuWkzW
-iDRFX Store : https://discord.gg/GYg4BdaPWm
+ - Script Made By : 76B_qht#4576 AND DrFx#3097 
+ - RQStore : https://discord.gg/RBQepuWkzW
+ - iDRFX Store : https://discord.gg/GYg4BdaPWm
